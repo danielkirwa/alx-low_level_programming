@@ -1,1 +1,1 @@
-low level programming c
+script that runs a C file
