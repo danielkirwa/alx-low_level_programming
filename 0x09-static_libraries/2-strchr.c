@@ -1,23 +1,21 @@
-#include "holberton.h"
 
+
+#include "main.h"
 /**
- * _strchr - prints found c
- * @s: pointer to char
- * @c: char params to found
- * Return: *S
-*/
-
+ * _strchr - Entry point
+ * @s: input
+ * @c: input
+ * Return: Always 0 (Success)
+ */
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+
+	for (; s[i] >= '\0'; i++)
 	{
-
 		if (s[i] == c)
-		{
-			return (s + i);
-		}
+			return (&s[i]);
 	}
 	return (0);
 }
